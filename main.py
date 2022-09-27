@@ -49,4 +49,10 @@ money -= 2
 if money <=0:
     sus.quit('NO MONEY')
 
-pygame.display.set_mode([400,300])
+w = pygame.display.set_mode([40, 40])
+
+rick = pygame.image.load('unamed.gif')
+
+pygame.blit(w(0,0),rick)
+
+pygame.display.flip()
