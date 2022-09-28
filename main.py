@@ -41,18 +41,20 @@ while loop:
 print('here\'s no money')
 money -= 2
 if money <=0:
-    sus.quit('NO MONEY')
+    sus.stop('NO MONEY')
 t.sleep(5)
 print('and taxes')
 
 money -= 2
 if money <=0:
-    sus.quit('NO MONEY')
+    sus.stop('NO MONEY')
 
 w = pygame.display.set_mode([40, 40])
 
-rick = pygame.image.load('unamed.gif')
+rick = pygame.image.load('unnamed.gif')
 
-pygame.blit(w(0,0),rick)
+for i in range(100):
+  w.blit(rick,(0,0))
+  pygame.display.flip()
+  pygame.time.wait(10)
 
-pygame.display.flip()
