@@ -7,7 +7,7 @@ import time as t
 #import noncence
 
 pygame.init()
-money = 10
+money = 20
 enters = 0
 loop = True
 c = pygame.time.Clock()
